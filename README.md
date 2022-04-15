@@ -2,7 +2,7 @@
 BepInEx plugin featuring miscellaneous patches and mods for the unity game Taiko: The Drum Master
 
 # Installation
-Copy `com.swigz.miscpatches.dll` to `BepInEx/plugins`
+Copy `com.swigz.miscpatches.dll` to `BepInEx/plugins`  
 Edit `com.swigz.miscpatches.cfg`to enable/disable patches.
 
 # QuickRestart and QuickExit Song
