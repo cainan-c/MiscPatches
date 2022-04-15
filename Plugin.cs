@@ -61,7 +61,7 @@ namespace MiscPatches
             if (Plugin.configQuickQuitSong.Value)
                 instance.PatchAll(typeof(QuickQuitSong));
 
-            //if (Plugin.configQuickQuitSong.Value)
+            //if (Plugin.configCustomShougou.Value)
                //instance.PatchAll(typeof(CustomShougou));
 
 
