@@ -33,20 +33,21 @@ namespace MiscPatches
                         false,
                         "Hit \"Escape\" on your keyboard to quickly quit a song and return to Song Select.");
 
-        configCustomShougou = Config.Bind("General.CustomTitle",
-                        "CustomShougou",
-                        false,
-                        "Enable the Custom Title Patch.");
+        //Comment out custom title patch, doesn't work on 1.3.1+ due to IL2CPP stuff.
+        //configCustomShougou = Config.Bind("General.CustomTitle",
+        //                "CustomShougou",
+        //                false,
+        //                "Enable the Custom Title Patch.");
 
-        configCustomShougouText = Config.Bind("General.CustomTitle",
-                        "CustomShougouText",
-                        "",
-                        "Set a Custom Title");
+        //configCustomShougouText = Config.Bind("General.CustomTitle",
+        //                "CustomShougouText",
+        //                "",
+        //               "Set a Custom Title");
 
-        configCustomShougouLang = Config.Bind("General.CustomTitle",
-                        "CustomShougouLang",
-                        1,
-                        "Set the font to use.\nJp = 0\nEn,Fr,It,De,Es = 1\nTc = 2\nSc = 3\nKr = 4");
+        //configCustomShougouLang = Config.Bind("General.CustomTitle",
+        //                "CustomShougouLang",
+        //                1,
+        //                "Set the font to use.\nJp = 0\nEn,Fr,It,De,Es = 1\nTc = 2\nSc = 3\nKr = 4");
 
 
             var instance = new Harmony("Misc Patches");
@@ -60,8 +61,8 @@ namespace MiscPatches
             if (Plugin.configQuickQuitSong.Value)
                 instance.PatchAll(typeof(QuickQuitSong));
 
-            if (Plugin.configQuickQuitSong.Value)
-                instance.PatchAll(typeof(CustomShougou));
+            //if (Plugin.configQuickQuitSong.Value)
+               //instance.PatchAll(typeof(CustomShougou));
 
 
 
