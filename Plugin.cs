@@ -1,11 +1,12 @@
 ﻿using BepInEx;
+using BepInEx.IL2CPP;
 using BepInEx.Configuration;
 using HarmonyLib;
 
 namespace MiscPatches
 {
     [BepInPlugin("com.swigz.miscpatches", "Misc Patches", "1.0")]
-    public class Plugin : BaseUnityPlugin
+    public class Plugin : BasePlugin
     {
         public static ConfigEntry<bool> configOfflineSaveLoad;
         public static ConfigEntry<bool> configQuickRestart;
@@ -14,7 +15,7 @@ namespace MiscPatches
         public static ConfigEntry<bool> configCustomShougou;
         public static ConfigEntry<string> configCustomShougouText;
         public static ConfigEntry<int> configCustomShougouLang;
-        private void Awake()
+        public override void Load()
         {
 
         configOfflineSaveLoad = Config.Bind("General.Patches",
@@ -65,7 +66,7 @@ namespace MiscPatches
 
 
         // Plugin startup logic
-        Logger.LogInfo($"Plugin {"com.swigz.miscpatches"} is loaded!");
+        Log.LogInfo($"Plugin {"com.swigz.miscpatches"} is loaded!");
         }
     }
 }
