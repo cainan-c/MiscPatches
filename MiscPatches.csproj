@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>com.swigz.miscpatches</AssemblyName>
     <Description>among us</Description>
     <Version>0.0.1</Version>
@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-be.553" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
     <PackageReference Include="Taiko.GameLibs" Version="1.2.2-r.1" />
     <PackageReference Include="UnityEngine.Modules" Version="2020.3.0" IncludeAssets="compile" />
