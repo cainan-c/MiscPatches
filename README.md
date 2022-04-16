@@ -10,6 +10,11 @@ Sets a custom title in-game.
 
 ![image of a name plate in taiko no tatsujin saying: this is a title](https://i.imgur.com/r1mua9U.png)
 
+# AddMechadon (1.1/1.2 only)  
+Adds Mecha-DON as a selectable Costume in the Outfit menu
+
+![image of the outfit selection menu](https://i.imgur.com/ng92ohn.png)
+
 # QuickRestart and QuickExit Song
 Quickly restart the current song being played or quickly exit back to Song Select.
 

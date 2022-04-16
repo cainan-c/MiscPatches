@@ -14,6 +14,9 @@ namespace MiscPatches
         public static ConfigEntry<bool> configCustomShougou;
         public static ConfigEntry<string> configCustomShougouText;
         public static ConfigEntry<int> configCustomShougouLang;
+
+        public static ConfigEntry<bool> configAddMechadon;
+
         private void Awake()
         {
 
@@ -47,6 +50,11 @@ namespace MiscPatches
                         1,
                         "Set the font to use.\nJp = 0\nEn,Fr,It,De,Es = 1\nTc = 2\nSc = 3\nKr = 4");
 
+        configAddMechadon = Config.Bind("General.Patches",
+                            "AddMechadon",
+                            false,
+                            "Adds Mecha-DON as a selectable costume in-game.");
+
 
             var instance = new Harmony("Misc Patches");
 
@@ -62,10 +70,11 @@ namespace MiscPatches
             if (Plugin.configCustomShougou.Value)
                 instance.PatchAll(typeof(CustomShougou));
 
+            if (Plugin.configAddMechadon.Value)
+                instance.PatchAll(typeof(AddMechadon));
 
-
-        // Plugin startup logic
-        Logger.LogInfo($"Plugin {"com.swigz.miscpatches"} is loaded!");
+            // Plugin startup logic
+            Logger.LogInfo($"Plugin {"com.swigz.miscpatches"} is loaded!");
         }
     }
 }
