@@ -17,6 +17,8 @@ namespace MiscPatches
 
         public static ConfigEntry<bool> configAddMechadon;
 
+        public static ConfigEntry<bool> configMirrorMode;
+
         private void Awake()
         {
 
@@ -55,6 +57,10 @@ namespace MiscPatches
                             false,
                             "Adds Mecha-DON as a selectable costume in-game.");
 
+        configMirrorMode = Config.Bind("General.Random",
+                        "MirrorMode",
+                        false,
+                        "Flips everything around in Enso mode.");
 
             var instance = new Harmony("Misc Patches");
 
@@ -72,6 +78,9 @@ namespace MiscPatches
 
             if (Plugin.configAddMechadon.Value)
                 instance.PatchAll(typeof(AddMechadon));
+
+            if (Plugin.configMirrorMode.Value)
+                instance.PatchAll(typeof(MirrorMode));
 
             // Plugin startup logic
             Logger.LogInfo($"Plugin {"com.swigz.miscpatches"} is loaded!");
