@@ -15,10 +15,17 @@ Adds Mecha-DON as a selectable Costume in the Outfit menu
 
 ![image of the outfit selection menu](https://i.imgur.com/GIiFnTQ.png)
 
+# MirrorMode (1.1/1.2 only)    
+Flips everything around in Enso mode.
+
+![animated image of taiko no tatsujin](https://i.giphy.com/media/6yGtTXtq9MVX97lFZx/giphy.webp)
+
+
+
 # QuickRestart and QuickExit Song
 Quickly restart the current song being played or quickly exit back to Song Select.
 
-![animated gif of taiko no tatsujin](https://i.giphy.com/media/CGKQn5d5bm184P3SfY/giphy.webp)
+![animated image of taiko no tatsujin](https://i.giphy.com/media/CGKQn5d5bm184P3SfY/giphy.webp)
 
 # OfflineSaveLoad
 Force load a [FreeLocalSaves](https://github.com/Sanae6/FreeLocalSaves/releases/latest) save file and bypass the game's Microsoft Account checks.  
